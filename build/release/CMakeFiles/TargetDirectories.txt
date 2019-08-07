@@ -1,0 +1,8 @@
+/home/yan/program/vscode/WebServer_learn/build/release/CMakeFiles/rebuild_cache.dir
+/home/yan/program/vscode/WebServer_learn/build/release/CMakeFiles/edit_cache.dir
+/home/yan/program/vscode/WebServer_learn/build/release/WebServer/CMakeFiles/rebuild_cache.dir
+/home/yan/program/vscode/WebServer_learn/build/release/WebServer/CMakeFiles/WebServer.dir
+/home/yan/program/vscode/WebServer_learn/build/release/WebServer/CMakeFiles/edit_cache.dir
+/home/yan/program/vscode/WebServer_learn/build/release/WebServer/base/CMakeFiles/rebuild_cache.dir
+/home/yan/program/vscode/WebServer_learn/build/release/WebServer/base/CMakeFiles/libserver_base.dir
+/home/yan/program/vscode/WebServer_learn/build/release/WebServer/base/CMakeFiles/edit_cache.dir
