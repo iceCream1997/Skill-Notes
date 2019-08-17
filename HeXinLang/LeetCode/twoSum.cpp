@@ -23,13 +23,3 @@ public:
         return result;
     }
 };
-
-int main()
-{
-    vector<int> test{2,7,9,11};
-    int sum = 9;
-    solution a;
-    vector<int> result(a.twoSum(test,sum));
-    cout << result.size() << endl;
-    return 0;
-}
