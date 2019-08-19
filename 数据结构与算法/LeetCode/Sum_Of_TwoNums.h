@@ -17,7 +17,12 @@ struct ListNode
     ListNode *next;
     ListNode(int x) : val(x), next(nullptr) {}
 };
-
+/*
+该题主要考察临界条件，与代码的完整性
+计算完所有节点之后，还要最后计算一次进位。
+首先用一个int对象保存进位，每次节点相加的时候，需要算上进位。
+其次一直累加，直至两个链表都为空，此时再最后判断一次是否需要多进一位。
+*/
 class solution
 {
 public:

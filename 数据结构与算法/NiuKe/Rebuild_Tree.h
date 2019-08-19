@@ -6,17 +6,19 @@ using namespace std;
 假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
 例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。
  */
-
-//思路：已知前序遍历的第一个节点是当前树的根节点，则可以由此得出根节点的左子树和右子树。
-//采用递归，可得出答案.
-//即，该根节点的左子节点为左子树的先序和中序调用函数得到的结果。
 struct TreeNode{
     int val;
     TreeNode* left;
     TreeNode* right;
     TreeNode(int n):val(n),left(nullptr),right(nullptr){}
 };
-
+/*
+已知的是，先序遍历的第一个节点，是当前树的根节点
+该树没有重复值，因此在知道根节点的情况下，可以将先序遍历序列和中序遍历序列由根节点划分开
+分别得到左子树和右子树的先序遍历序列、中序遍历序列
+由左(右)子树的先序遍历序列和中序遍历序列可以得到该子树的根节点。
+迭代直至子树为空，则可以求出所有子树的根节点，即可以重建该树。
+*/
 class solution{
 public:
     TreeNode* reConstructBinaryTree(vector<int> pre,vector<int> vin)
