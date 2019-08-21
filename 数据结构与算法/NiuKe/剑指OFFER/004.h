@@ -1,4 +1,4 @@
-#include "head.h"
+#include <vector>
 using namespace std;
 
 /*

@@ -1,5 +1,3 @@
-#C++基础
-1. new与delete    
     * new表达式与delete。
     new表达式(new operator)的工作一般分为三步.
     首先调用operator new分配一块内存足够大的空间来存储给定类型的对象，假如失败的话调用new_handler；

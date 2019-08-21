@@ -2,7 +2,8 @@
 输入一个链表，按链表值从尾到头的顺序返回一个ArrayList
  */
 
-#include "head.h"
+#include <stack>
+#include <vector>
 using namespace std;
 
 struct ListNode{
