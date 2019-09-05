@@ -5,7 +5,7 @@
     最后返回一个指向该对象的指针。
     delete函数首先执行指定对象的析构函数，然后释放内存。
     我们可以重载new，但实际上重载的不是new表达式，而是重载了operator new操作符。new表达式(new operator)是不可以重载的，也就是说，new表达式无论如何执行的都是上述三个步骤。
-    可以定义自己的operator new(delete)版本，此时会覆盖标准库的new(delete)函数。标准库定义了几个不同版本的operator new函数,以new为例(数组版本类似)
+    可以定义自己的operator new(delete)版本，此时会覆盖标准库的operator new。标准库定义了几个不同版本的operator new函数,以new为例(数组版本类似)
     void* operator new(size_t size);
     void* operator new(size_t, nothrw_t&) noexcept;
 

@@ -13,6 +13,8 @@ class solution
 public:
 /*
 思路：暴力遍历时间复杂度大约是o(nlog(n))，或者采用哈希,时间复杂度为o(n)。
+可以自己定义哈希函数，这里采用使用当前数值与目标和的差，作为hash值，用标准库自带的hash函数。
+第一遍遍历简历hash表，第二次遍历判断当前数值是否存在hash表中，如果存在，即得出结果。
 */
     vector<int> twoSum(vector<int> &nums, int target)
     {
@@ -30,6 +32,8 @@ public:
         }
         return result;
     }
+
+
     vector<int> hash_for_twosum(vector<int> &nums, int target)
     {
         unordered_map<int, int> hmap;
