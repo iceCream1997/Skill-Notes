@@ -3,6 +3,10 @@
         "ostream": "cpp",
         "iostream": "cpp",
         "*.tcc": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "iosfwd": "cpp",
+        "thread": "cpp",
+        "bitset": "cpp",
+        "istream": "cpp"
     }
 }
